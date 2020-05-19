@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('pascal', 'Pascal (Pa)', 1);
+            conversion.loadUI('kilopascal', 'Kilopascal (kPa)', 0.001);
+            conversion.loadUI('megapascal', 'Megapascal (MPa)', 0.000001);
+            conversion.loadUI('bar', 'Bar (bar)', 0.00001);
+            conversion.loadUI('millibar', 'Millibar (mbar)', 0.01);
+            conversion.loadUI('atmosphere', 'Atmosphere (atm)', 1/ 101325);
+            conversion.loadUI('poundpsin', 'Pound Force per Square Inch (psi)', 1/6894.757);
+            conversion.loadUI('dynepscm', 'Dyne per Square Centimetre', 10);
+
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>

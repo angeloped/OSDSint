@@ -1,0 +1,1 @@
+var formulaData = ' { "title": "HÌNH CHỎM CẦU 1", "variables": [ { "name": "Bán kính", "variable": "a" }, { "name": "Đường kính", "variable": "b" } ], "result": [ { "formula": "3.14*b*b*(a-b/3)", "name": "diện tích" }, { "formula": "a+2*b", "name": "test" } ] }';

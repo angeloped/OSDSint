@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('leitre', 'Litre (l)', 1000);
+            conversion.loadUI('cubicmetre', 'Cubic Metre (m&sup3;)', 1);
+            conversion.loadUI('cubicinch', 'Cubic Inch (in&sup3;)', 1000000/16.387064 );
+            conversion.loadUI('cubicfoot', 'Cubic Foot (ft&sup3;)', 1/0.028316846592);
+            conversion.loadUI('cubicyard', 'Cubic Yard (yd&sup3;)', 1/0.764554857984);
+            conversion.loadUI('gallonus', 'Gallon (US) (gal)', 1000/3.785411784 );
+            conversion.loadUI('galloncan', 'Gallon (UK) (gal)',1000/4.54609 );
+
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('byte', 'Byte (B)', 1);
+            conversion.loadUI('kilobyte', 'Kilobyte | Kibibyte (kB | Ki)', 1/1024);
+            conversion.loadUI('megabyte', 'Megabyte | Mebibyte (MB | Mi)', 1/Math.pow(1024,2));
+            conversion.loadUI('gigabyte', 'Gigabyte | Gibibyte (GB | Gi)', 1/Math.pow(1024,3));
+            conversion.loadUI('terabyte', 'Terabyte | Tebibyte (TB | Ti)', 1/Math.pow(1024,4));
+            conversion.loadUI('petabyte', 'Petabyte | Pebibyte (PB | Pi)', 1/Math.pow(1024,5));
+            conversion.loadUI('bit', 'Bit (b)', 8);
+            conversion.loadUI('zebibyte', 'Zebibyte (Zi)', 1/Math.pow(1024,7));
+
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>
+

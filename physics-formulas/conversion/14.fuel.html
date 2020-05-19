@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('litrep100km', 'Litres per 100 Kilometres (l/100km)', 100, false, "kmplitre", "100/this", "100/root");
+//resultByFloat = 100/value.doubleValue;
+            conversion.loadUI('kmplitre', 'Kilometres per Litre (km/l)', 1,true);
+            conversion.loadUI('mipgallon', 'Miles per Gallon (US) (mpg)', 1 / 0.425144, false,"kmplitre", "this*0.425144", "root/0.425144" );
+            conversion.loadUI('mipgallon2', 'Miles per Gallon (UK) (mpg)', 1/ 0.354005, false,"kmplitre", "this*0.354005", "root/0.354005");
+
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>

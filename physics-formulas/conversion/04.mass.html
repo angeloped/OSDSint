@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('gram', 'Gram (g)', 1);
+            conversion.loadUI('kilogram', 'Kilogram (kg)', 0.001);
+            conversion.loadUI('tonne', 'Tonne (t)', 0.000001);
+            conversion.loadUI('miligram', 'Milligram (mg)', 1000);
+            conversion.loadUI('microgram', 'Microgram (μg)', 1000000);
+            conversion.loadUI('ounce', 'Ounce (oz)', 1/28.349523125);
+            conversion.loadUI('pound', 'Pound (lb)', 1/453.59237 );
+            conversion.loadUI('carat', 'Carat', 5);
+            conversion.loadUI('slug', 'Slug', 1/(1000 *  0.06852176585));
+            conversion.loadUI('ounce2', 'Ounce (Troy) (ozt)', 1/31.1034768);
+
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>

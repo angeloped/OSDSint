@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('watt', 'Watt (W)', 1);
+            conversion.loadUI('kilowatt', 'Kilowatt (kW)', 0.001);
+            conversion.loadUI('megawatt', 'Megawatt (MW)', 0.000001);
+            conversion.loadUI('milliwatt', 'Milliwatt (mW)', 1000);
+            conversion.loadUI('microwatt', 'Microwatt (µW)', 1000000);
+            conversion.loadUI('horsepower', 'Horsepower (hp)', 1/ 735.49875);
+            conversion.loadUI('calorieps', 'Calorie per Second (cal/s)', 1 /4.1868);
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>

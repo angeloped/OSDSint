@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+  
+    <title></title>
+
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('metre', 'Metre (m)', 1);
+            conversion.loadUI('kilometre', 'Kilometre (km)', 0.001);
+            conversion.loadUI('centimetre', 'Centimetre (cm)', 100);
+            conversion.loadUI('milimetre', 'Millimetre (mm)', 1000);
+            conversion.loadUI('micrometre', 'Micrometre | Mircon (μm)', 1000000);
+            conversion.loadUI('nanometre', 'Nanometre (nm)', 1000000000);
+            conversion.loadUI('inch', 'Inch (in)', 1 / 0.0254);
+            conversion.loadUI('foot', 'Foot (ft)', 1 / 0.3048);
+            conversion.loadUI('yard', 'Yard (yd)', 1 / 0.9144);
+            conversion.loadUI('mile', 'Mile (mi)', 1 / (1760 * 0.9144));
+            conversion.loadUI('lightyear', 'Light Year', 1 / (9.4607304725808 * 10e15));
+            conversion.loadUI('mile1', 'Nautical Mile (NM)', 1 / 1852);
+            conversion.loadUI('agnstrom', 'Angstrom (Å)', 10000000000);
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body onload="loadScript()">
+    <div id="conversion" class="container-fluid">
+       
+    </div>
+</body>
+</html>

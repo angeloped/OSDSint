@@ -1,0 +1,94 @@
+body {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+div {
+    border-bottom: 3px solid #222222;
+}
+
+h1 {
+    color: red;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+.clear_input {
+    font-size: 30px;
+    /*padding: 0 10px;*/
+}
+
+a {
+    color: #0254EB;
+}
+
+    a:visited {
+        color: #0254EB;
+    }
+
+    a.morelink {
+        text-decoration: none;
+        outline: none;
+    }
+
+.morecontent span {
+    display: none;
+}
+
+.favorite .checkbox {
+    -ms-transform: scale(3); /* IE */
+    -moz-transform: scale(3); /* FF */
+    -webkit-transform: scale(3); /* Safari and Chrome */
+    -o-transform: scale(3);
+    /*margin-left: 21px;*/
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.favorite div {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.favorite h2 {
+    margin-bottom: 30px;
+}
+
+
+#customized label, #customized input #conversion label, #conversion input {
+    width: 100%;
+}
+
+.container-fluid p {
+    padding: 15px;
+}
+
+.btn-customized {
+    margin-bottom: 10px;
+}
+
+.customized .results {
+    margin-top: 10px;
+}
+
+.customized .title {
+    color: red;
+}

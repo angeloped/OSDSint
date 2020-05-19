@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+
+            conversion.loadUI('squarekilometre', 'Square Kilometre (km&sup2;)', 0.000001);
+            conversion.loadUI('hectare', 'Hectare (ha)', 1/10000);
+            conversion.loadUI('acre', 'Acre', 1/ 4046.8564224);
+            conversion.loadUI('squaremetre', 'Square Metre (m&sup2;)', 1);
+            conversion.loadUI('squarecentimetre', 'Square Centimetre (cm&sup2;)', 10000);
+            conversion.loadUI('squaremilimetre', 'Square Millimetre (mm&sup2;)', 1000000);
+            conversion.loadUI('squaremile', 'Square Mile (mi&sup2;)', 1/(2.589988110336*1000000));
+            conversion.loadUI('squareyard', 'Square Yard (yd&sup2;)', 1/0.83612736);
+            conversion.loadUI('squarefoot', 'Square Foot (ft&sup2;)', 1/0.09290304);
+            conversion.loadUI('squareinch', 'Square Inch (in&sup2;)', 1/0.00064516 );
+            conversion.initialize();
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid">
+
+    </div>
+</body>
+</html>

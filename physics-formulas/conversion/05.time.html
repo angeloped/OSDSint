@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap/bootstrap-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../bootstrap/bootstrap.js"></script>
+    <script type="text/javascript" src="../numeral.min.js"></script>
+    <script type="text/javascript" src="../script.js"></script>
+    <script type="text/javascript" src="../jquery.clearsearch.js"></script>
+    <title></title>
+    <style>
+        div {
+            border: none;
+        }
+    </style>
+    <script language="javascript">
+        $(function () {
+            conversion.loadUI('year', 'Year', 1 / 31556952);
+            conversion.loadUI('month', 'Month', 1 /(31556952/12) ); //2592000
+            conversion.loadUI('week', 'Week', 1 / 604800);
+            conversion.loadUI('day', 'Day', 1 / 86400);
+            conversion.loadUI('hour', 'Hour (h)', 1 / 3600);
+            conversion.loadUI('minute', 'Minute (min)', 1 / 60);
+            conversion.loadUI('second', 'Second (s)', 1);
+            conversion.loadUI('milisecond', 'Millisecond (ms)', 1000);
+            conversion.loadUI('microsecond', 'Microsecond (μs)', 1000000);
+            conversion.loadUI('decade', 'Decade', 1 / (31556952 * 10));
+            conversion.loadUI('century', 'Century', 1 / (31556952 * 100));
+            conversion.loadUI('millennium', 'Millennium', 1 / (31556952 * 1000));
+            conversion.initialize();
+
+            //$('#conversion input#year').keyup(function (obj, e) {
+            //    if ((obj.keyCode > 47 && obj.keyCode < 58) ||
+            //           obj.keyCode == 8 ||
+            //           (obj.keyCode > 95 && obj.keyCode < 106)) {
+            //        var value = conversion.reformat($(this).val());
+            //        $(this).val(conversion.format(value));
+            //        var unit = 1 / 12;
+            //        var $base_root = $('input#month');
+            //        var base_root_value = value / unit;
+            //        $base_root.val(conversion.format(base_root_value));
+
+            //    } else {
+            //        value = this.value.replace(/[^0-9\.\,]/g, '');
+            //        $(this).val(value);
+            //    }
+            //});
+        });
+    </script>
+</head>
+<body>
+    <div id="conversion" class="container-fluid"></div>
+</body>
+</html>

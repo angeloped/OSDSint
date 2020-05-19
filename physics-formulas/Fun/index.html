@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="file:///android_asset/style.css" />
+    <script type="text/javascript" src="file:///android_asset/jquery.js"></script>
+    <script type="text/javascript" src="file:///android_asset/script.js"></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script type="text/javascript" src="../jquery.js"></script>
+    <script type="text/javascript" src="../script.js"></script> -->
+
+
+    <script>
+        function loadScript1() {
+            loadScript();
+            $('img').each(function (key, val) {
+                /*var path = $(val).attr('src');
+                var start = path.lastIndexOf('/') + 1;
+                var end = path.length;
+                $(val).attr('src', path.substring(start, end));*/
+
+                $(val).attr('src', $(val).attr('src') + "?" + new Date().getTime());
+            });
+            shorten.init();
+            if (location.hash.substr(1) == "reload") {
+                setupMovingFavorite();
+                location.hash = "";
+            }
+        }
+    </script>
+</head>
+
+<body onload="loadScript1()" style="margin-top:10px;font-size:40px" class="favorite">
+	  <!-- <div>
+     <h2>Can you find the interesting trait of these calculations?</h2>
+        <img border="0" src="file:///android_asset/Fun/Fun31.png" /> 
+    </div>-->
+</body>
+</html>
